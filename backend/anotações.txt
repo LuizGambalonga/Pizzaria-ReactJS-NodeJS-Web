@@ -1,0 +1,7 @@
+yarn init -y
+yarn add typescript -D
+yarn add express
+//autocomplite
+yarn add @types/express -D
+//iniciar o typescript no projeto
+yarn tsc --init
