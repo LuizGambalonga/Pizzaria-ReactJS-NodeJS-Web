@@ -5,3 +5,11 @@ yarn add express
 yarn add @types/express -D
 //iniciar o typescript no projeto
 yarn tsc --init
+yarn add cors
+npm i --save-dev @types/cors
+https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases-typescript-postgres
+yarn add prisma
+yarn add @prisma/client  (usar para migrations)
+yarn prisma migrate dev
+yarn add bcryptjs
+yarn add @types/bcryptjs
