@@ -1,11 +1,6 @@
 import prismaClient from '../../prisma';
 import { hash } from 'bcryptjs'
-//interface criada, para que seja feito a obrigatoriedade de informar os campos abaixo quando o Controller chamar este serviço.
-interface UserRequest{
-    name: string,
-    email: string,
-    password: string
-}
+import { UserRequest } from '../../interfaces/UserRequestInterface';
 
 class CreateUserService{
     async execute({name, email, password}: UserRequest){
