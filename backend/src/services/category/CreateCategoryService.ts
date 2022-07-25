@@ -1,6 +1,5 @@
-import { CategoryRequestInterface } from "../../interfaces/CategoryRequestInterface";
+import { CategoryRequestInterface } from "../../interfaces/category/CategoryRequestInterface";
 import prismaClient from "../../prisma";
-import { Response } from "express";
 
 class CreateCategoryService{
     async execute({name}: CategoryRequestInterface){

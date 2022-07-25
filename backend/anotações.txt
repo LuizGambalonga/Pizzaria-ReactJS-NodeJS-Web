@@ -15,3 +15,6 @@ yarn add bcryptjs
 yarn add @types/bcryptjs
 yarn add jsonwebtoken
 yarn add @types/jsonwebtoken
+//trabalhar com imagens no node.
+yarn add multer
+yarn add @types/multer

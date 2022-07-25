@@ -1,0 +1,20 @@
+
+import { DatailOrderRequestInterface } from "../../interfaces/order/DatailOrderRequestInterface"
+import prismaClient from "../../prisma"
+
+class DetailOrderService{
+    async execute({order_id}: DatailOrderRequestInterface){
+        const orders = await prismaClient.item.findMany({
+            where:{
+                order_id: order_id
+            },
+            include:{
+                product: true,
+                order: true
+            }
+        })
+
+        return orders
+    }
+}
+export{DetailOrderService}
